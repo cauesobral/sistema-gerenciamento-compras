@@ -1,29 +1,91 @@
-Lista de Compras (C)
+# Sistema de Gerenciamento de Compras
 
-Projeto em linguagem C para gerenciar uma lista de compras utilizando-se o terminal. Permite adicionar, remover, visualizar e manipular itens de forma simples.
+Sistema desenvolvido em **C** para gerenciamento de compras e estoque, executado via terminal. O projeto permite o cadastro e autenticação de usuários, controle de produtos em estoque e criação de listas de compras, utilizando arquivos de texto para armazenamento das informações.
 
-Dependências
+## Funcionalidades
 
-Compilador C
-Sistema operacional Windows, Linux ou macOS
-Como executar
+- Cadastro de usuários
+- Login com autenticação
+- Gerenciamento de estoque
+  - Visualizar produtos
+  - Adicionar produtos
+  - Remover produtos
+  - Consultar informações do estoque
+- Criação de listas de compras
+- Persistência de dados utilizando arquivos `.txt`
 
-Após compilar:
+## Tecnologias Utilizadas
 
-No Linux/macOS:./lista_compras
+- Linguagem C
+- Manipulação de arquivos
+- Estruturas de dados básicas
+- Modularização do código
+- Code::Blocks (projeto original)
 
-No Windows: lista_compras.exe
+## Estrutura do Projeto
 
-Funcionalidades
+```
+Prj_Lista_de_compras/
+├── main.c
+├── backend.c
+├── banco_de_dados.c
+├── sistema.h
+├── usuarios.txt
+├── estoque.txt
+├── lista_compras.txt
+└── ...
+```
 
-Adicionar itens à lista
-Remover itens
-Mostrar lista atual
-Salvar/carregar lista em arquivo (se implementado no código)
-Exemplo de uso
+## Como Executar
 
-==== LISTA DE COMPRAS ====
+1. Clone este repositório:
 
-Adicionar item
-Remover item
-Listar itens
+```bash
+git clone https://github.com/seu-usuario/sistema-gerenciamento-compras.git
+```
+
+2. Abra o projeto no **Code::Blocks** ou compile utilizando um compilador C, como GCC.
+
+Exemplo com GCC:
+
+```bash
+gcc main.c backend.c banco_de_dados.c -o sistema
+```
+
+3. Execute o programa:
+
+```bash
+./sistema
+```
+
+No Windows:
+
+```bash
+sistema.exe
+```
+
+## Objetivos do Projeto
+
+Este projeto foi desenvolvido para praticar conceitos importantes da linguagem C, incluindo:
+
+- Organização de projetos em múltiplos arquivos
+- Modularização
+- Manipulação de arquivos
+- Entrada e saída de dados
+- Estruturas condicionais e de repetição
+- Funções
+- Desenvolvimento de aplicações em terminal
+
+## Melhorias Futuras
+
+- Interface gráfica
+- Banco de dados relacional (SQLite ou PostgreSQL)
+- Criptografia de senhas
+- Controle de níveis de acesso
+- Relatórios de estoque
+- Histórico de compras
+- Melhor tratamento de erros
+
+## Licença
+
+Este projeto foi desenvolvido para fins de estudo e aprendizado.
